@@ -1,0 +1,450 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+  }
+:root {
+    --color-A19797: #A19797;
+    --gray: #6c757d;
+    --color-0D1481: #0D1481;
+    --color-363234: #363234;
+}
+.color-A19797 {
+    color: var(--color-A19797);
+}
+.color-white {
+    color: white;
+}
+.divider {
+    background: #EA0505;
+    border: 2.4px solid #EA0505;
+}
+a {   
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+.btn-wrapper {
+    display: flex;
+    padding: 50px;    
+    justify-content: center;
+}
+.like-btn {
+    font-family: "Roboto Mono", Sans-serif;
+    background-color: #534747;
+    line-height: 1;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 15px;
+}
+.like-btn:hover {
+    background-color: #309DD4;
+}
+.flex {
+    display: flex !important;
+}
+.container {
+    margin: 0px !important;
+}
+.margin-10px {    
+    margin: 10px 0px;
+}
+.margin-top-20px {
+    margin-top: 20px
+}
+.pad-top-20px {
+    padding-top: 20px;
+}
+.section-stretched {
+    width: 100%;
+}
+.video-title {
+    font-family: "Roboto Mono", Sans-serif;
+    font-size: 54px;
+    font-weight: normal;
+}
+.video-sub-title {
+    color: #F3EFEF;
+    font-family: "Source Code Pro", Sans-serif;
+    font-size: 52px;
+    font-weight: 500;
+}
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-attachment: scroll;
+    overflow: hidden;
+}
+.videoContainer video {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+}
+.videoContainer .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 2;    
+    background-color: #04081d;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.overlay-content {
+    position: absolute;
+    top: 35%;
+    left: 4%;
+    z-index: 3;
+}
+.video {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.background-video {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.min-height {
+    min-height: 260px;
+}
+.height-bg-img {
+    height: 350px;    
+}
+.height-bg-img-620px {
+    height: 620px;
+}
+.card {
+    display: flex;
+    width: 100% !important;
+}
+.card-body {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+.card .card-img {
+    min-width: 20%;
+    max-width: 45%;
+}
+.card .card-content {
+    min-width: 20%;
+    max-width: 55%;
+    color: #595959;
+    font-weight: 400;
+}
+.card .card-content .card-content-header { 
+    color: #423E3E;
+    font-family: "Raleway", Sans-serif;
+    font-size: 2em;
+    margin: 0px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+.card .card-content p{
+    color: #423E3E;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+    font-size: 15px;
+    font-family: "Roboto Mono", Sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* background-att-img */
+.background-att-computer-img {
+    background-attachment: fixed !important;
+    background: url("../image/computer.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.background-att-mars-img {
+    background-attachment: fixed !important;
+    background: url("../image/mars-92207_1280.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.background-att-server-img {
+    background-attachment: fixed !important;
+    background: url("../image/server-1235959_1280.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.background-att-iot-img {
+    background-attachment: fixed !important;
+    background: url("../image/internet-of-things-4129218_1280.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.background-att-man-img {
+    background-attachment: fixed !important;
+    background: url("../image/man-845847_1920.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+.why-card {
+    margin: 2%;
+    padding: 12px;
+    width: 50%;
+}
+.why-card .why-card-header{
+    color: #F3EFEF;
+    font-family: "Raleway", Sans-serif;
+    font-size: 42px;
+    line-height: 48px;
+}
+.why-card .why-card-content {
+    color: #CBC3C3;
+    font-size: 16px;
+}
+/* width */
+.w-100p {
+    width: 100% !important;
+}
+.w-44p {
+    width: 44%;
+}
+.w-54p {
+    width: 54%;
+}
+.h-230px {
+    height: 230px;
+}
+
+.margin-btn-15px {
+    margin-bottom: 15px;
+}
+.margin-btn-40px {
+    margin-bottom: 40px;
+}
+/* meter */
+.meter { 
+    height: 20px;
+    width: 65%;
+    position: relative;
+    background: #f3efe6;
+    color: #04081d;
+    overflow: hidden;
+    margin: 5px 0px;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+.meter .meter-header {
+    margin: 5px;
+}
+.bg-green {
+    background-color: green !important;
+}
+.bg-0D1481 {
+    background-color: var(--color-0D1481) !important;
+}
+.bg-363234 {
+    background-color: var(--color-363234) !important;
+}
+.progress {
+    background-color: red;
+    color: #04081d;
+    -webkit-animation: progressBar 3s ease-in-out;
+    -webkit-animation-fill-mode:both; 
+    -moz-animation: progressBar 3s ease-in-out;
+    -moz-animation-fill-mode:both; 
+}
+
+@-webkit-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@-moz-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+section {margin: 10px 0px;}
+/* view btn */
+.link-btn {
+    display: block;
+    color:#309DD4;
+    margin: 10px 0px;
+}
+.link-btn:hover {
+    color: white;
+} 
+.view-more {    
+    font-family: "Roboto", Sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.view-more span {
+    margin-right: 5px;
+}
+.social-media-icons {    
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+}
+.heading-title {
+    font-family: "Roboto Mono", Sans-serif;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+}
+.flex {    
+    display: flex;
+}
+.testimonial-card {
+    display: flex;
+    margin: 20px;
+    padding: 30px;
+    box-shadow: 9px 11px 14px 0 rgb(0 0 0 / 10%);
+    color: rgba(0, 0, 0, 0.5);
+    width: 420px;
+}
+.testimonial-card:hover {
+    border-bottom: solid 4px #2575fc;
+}
+.testimonial-card p {
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+.testimonial-card .profile-info{
+    display: block;
+}
+.border-hr {
+    width: 40px;
+    height: 2px;
+    background-color: #2575fc;
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.testimonial-card .profile-info .author-name {
+    font-size: 18px;
+    color: #04081d;
+    margin: 20px 0px;
+}
+.testimonial-card .profile-info .author-desc {
+    font-size: 13px;
+    display: block;
+}
+.page-margin {    
+    margin: 0px 35px;
+}
+.rights {
+    line-height: 21px;
+    font-family: "Raleway", Sans-serif;
+}
+/* footer */
+.footer-container {
+    background-color: #252222;
+    color: white;
+}
+.footer {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0px 35px;
+    margin-bottom: 15px;
+    padding: 35px 20px;
+    border-bottom: #393939;
+    border-bottom-style: solid;
+}  
+.footer-col {
+    flex: 1 0 21%;
+    margin: 10px;
+}
+.item {
+    /* font-family: "Roboto", Sans-serif; */
+    font-family: "Raleway", Sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.link-img {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-height: 120px;
+    width: 80%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 8px;
+    transition: all .4s ease;
+    display: flex;
+}
+
+
+/*  */
+
+
+.projects {
+    position:relative;
+    margin:2rem;
+    width: 335px;
+    height:400px;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    overflow: hidden;
+  }
+  
+  .image {
+    position:absolute;
+    width:100%;
+    height:240px;
+    background-color:skyblue;
+  }
+  
+  .words {
+    position:absolute;
+    top:240px;
+    padding:20px 20px 30px;
+    color:#333;
+  }
+  
+  .words i {
+    position:absolute;
+    top:27px;
+    right:40px;
+    cursor:pointer;
+  }
+  
+  .words h2 {
+    color:#008073;
+  }
+  
+  .words p {
+   padding:13px 0 0;
+  }
+  
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: all .6s;
+  }
+  
+  .active-overlay{
+    top: 0;
+  }
