@@ -4,13 +4,55 @@
         <title>Shauri Technologies Limited</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./assests/css/style.css">
+        <link rel="stylesheet" href="./assests/css/nav_bar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        
+        <script src="./assests/js/nav_bar.js"></script>
+
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body class="container">
+     <div class="topnav-wrapper">  
+        <div class="topnav" id="myTopnav">
+            <div class="nav-logo">
+                ShauriTech
+            </div>
+            <div class="nav-item">
+                <a href="index.html" class="active">Home</a>
+                <a href="about-us.html">About Us</a>
+                <div class="dropdown">
+                <button class="dropbtn">Services 
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="digital-transformation.html">Digital Transformation</a>
+                    <a href="#">Artificial Intelligence</a>
+                    <a href="#">Cloud Services</a>
+                    <a href="#">IoT</a>
+                </div>
+                </div> 
+                <div class="dropdown">
+                <button class="dropbtn">Industries 
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Automotive Industry</a>
+                    <a href="#">Banking and Finance</a>
+                    <a href="#">Healthcare</a>
+                    <a href="#">Media and Entertainment</a>
+                </div>
+                </div> 
+                <a href="#about">Careers</a>
+                <a href="#about">Contact Us</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBarFun()">&#9776;</a>
+            </div>
+        </div>
+    </div> 
+
         <div>
             <div class="videoContainer">                
                 <div class="overlay-content">
@@ -24,7 +66,7 @@
                 </div>
                 <video class="video background-video" autoplay="" muted="" playsinline="" loop="" src="./assests/image/coffee-1.mp4" ></video>
             </div>
-            <div class="margin-10px pad-top-20px">
+            <div class="margin-top-20px pad-top-20px">
                 <section>
                     <div class="min-height">
                         <div class="background-att-computer-img height-bg-img"></div>
@@ -176,7 +218,7 @@
                         Our testimonials
                     </div>
                     <div>
-                        <div class="testimonials flex">
+                        <div class="testimonials">
                             <div class="testimonial-card">
                                 <div class="commentor-content">
                                     <p>Great work, you made us realize the true value of our legacy data, the data insights you brought to the table, and the way you presented in a dashboard, is quite amazing</p>
@@ -194,6 +236,16 @@
                                     <span class="profile-info">
                                         <strong class="author-name">John Smith</strong>
                                         <span class="author-desc">Director, Nanoid</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="commentor-content">
+                                    <p>We really appreciate the way you integrated our IoT data into our Cloud applications and your power-saving designs. Your work is commendable and we strongly recommend your services</p>
+                                    <span class="border-hr"></span>
+                                    <span class="profile-info">
+                                        <strong class="author-name">Sally Garcia</strong>
+                                        <span class="author-desc">Director, Intellicops</span>
                                     </span>
                                 </div>
                             </div>
@@ -288,7 +340,7 @@
                             </div>
                         </div>
                     </footer>
-                    <p class="page-margin rights">
+                    <p class="page-margin rights  pad-BT-20px">
                     ©2022. Shauri Technologies Limited.,
                     <br />
                     All Rights Reserved.
@@ -296,6 +348,5 @@
                 </div>
             </div>
         </div>
-        <script src="./assests/js/index.js"></script>
     </body>
 </html>

@@ -1,15 +1,32 @@
-body {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-  }
+
 :root {
     --color-A19797: #A19797;
     --gray: #6c757d;
     --color-0D1481: #0D1481;
     --color-363234: #363234;
+    --color-423E3E: #423E3E;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.container-margin {
+    margin: 0px 50px;
+}
+a {   
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+.pos-fixed {
+    position: fixed;
 }
 .color-A19797 {
     color: var(--color-A19797);
+}
+.color-423E3E {
+    color: var(--color-423E3E);
 }
 .color-white {
     color: white;
@@ -18,14 +35,13 @@ body {
     background: #EA0505;
     border: 2.4px solid #EA0505;
 }
-a {   
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-decoration: none;
-}
 .btn-wrapper {
     display: flex;
     padding: 50px;    
+    justify-content: center;
+}
+.btn-wrapper-no-pad {
+    display: flex;  
     justify-content: center;
 }
 .like-btn {
@@ -51,8 +67,18 @@ a {
 .margin-top-20px {
     margin-top: 20px
 }
+.margin-top-10px {
+    margin-top: 10px
+}
+.margin-BT-10px {    
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
 .pad-top-20px {
     padding-top: 20px;
+}
+.pad-BT-20px {
+    padding: 20px 0px;
 }
 .section-stretched {
     width: 100%;
@@ -110,8 +136,15 @@ a {
 .min-height {
     min-height: 260px;
 }
+
+.height-bg-img-300px {
+    height: 300px;    
+}
 .height-bg-img {
     height: 350px;    
+}
+.height-bg-img-560px {
+    height: 560px;
 }
 .height-bg-img-620px {
     height: 620px;
@@ -122,7 +155,7 @@ a {
 }
 .card-body {
     display: flex;
-    margin: 5%;
+    margin: 4% 5%;
     justify-content: space-between;
 }
 .card .card-img {
@@ -131,7 +164,7 @@ a {
 }
 .card .card-content {
     min-width: 20%;
-    max-width: 55%;
+    max-width: 100%;
     color: #595959;
     font-weight: 400;
 }
@@ -154,6 +187,16 @@ a {
     text-align: left;
 }
 
+.card .card-body .card-content-para p{
+    color: #423E3E;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+    font-size: 15px;
+    font-family: "Roboto Mono", Sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+}
 /* background-att-img */
 .background-att-computer-img {
     background-attachment: fixed !important;
@@ -196,6 +239,22 @@ a {
     width: 100%;
     background-size: cover;
 }
+.background-att-bulb-img {
+    background-attachment: fixed !important;
+    background: url("../image/light-bulbs-5488573_1920.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* background-size: cover; */
+}
+.background-att-abstract-img {
+    background-attachment: fixed !important;
+    background: url("../image/m_Abstract_Background_-_Faded_Green_Mesh-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
 .why-card {
     margin: 2%;
     padding: 12px;
@@ -211,12 +270,28 @@ a {
     color: #CBC3C3;
     font-size: 16px;
 }
+.overlay-card-wrapper {
+    display: flex;
+    align-items: center;
+}
+.overlay-card {    
+    padding: 12px;
+}
+.overlay-card .overlay-card-header {
+    color: #FFFFFF;
+    font-family: "Raleway", Sans-serif;
+    font-size: 74px;
+}
 /* width */
 .w-100p {
     width: 100% !important;
 }
 .w-44p {
     width: 44%;
+}
+.w-50p {
+    width: 50%;
+    padding: 10px;
 }
 .w-54p {
     width: 54%;
@@ -310,6 +385,11 @@ section {margin: 10px 0px;}
 .flex {    
     display: flex;
 }
+.testimonials {
+    display: flex;
+    overflow-x: auto;
+    margin: 0px 100px;
+}
 .testimonial-card {
     display: flex;
     margin: 20px;
@@ -317,6 +397,7 @@ section {margin: 10px 0px;}
     box-shadow: 9px 11px 14px 0 rgb(0 0 0 / 10%);
     color: rgba(0, 0, 0, 0.5);
     width: 420px;
+    min-width: 420px;
 }
 .testimonial-card:hover {
     border-bottom: solid 4px #2575fc;
@@ -369,6 +450,33 @@ section {margin: 10px 0px;}
 .footer-col {
     flex: 1 0 21%;
     margin: 10px;
+}
+
+.box-container {
+    background-color: #f7f7f7;
+    color: white;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0px 35px;
+    margin-bottom: 15px;
+    font-family: "Raleway", Sans-serif;
+}  
+.box span {
+    font-family: "Raleway", Sans-serif;
+    color: #423E3E;
+    font-size: 20px;
+}
+.box p {
+    color: #595959;
+    line-height: 1.5;
+    text-align: justify;
+}
+.box-col {
+    flex: 1 0 21%;
+    margin: 10px;
+    padding: 10px 30px
 }
 .item {
     /* font-family: "Roboto", Sans-serif; */
