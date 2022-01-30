@@ -1,10 +1,12 @@
-
 :root {
     --color-A19797: #A19797;
     --gray: #6c757d;
-    --color-0D1481: #0D1481;
+    --color-3a45f2: #3a45f2;
     --color-363234: #363234;
     --color-423E3E: #423E3E;
+    --color-divider: #EA0505;    
+    --color-FFCB9A: #FFCB9A;
+    --color-fc9b38: #FC9B38;
 }
 body {
     font-family: 'Work Sans', sans-serif;
@@ -32,8 +34,8 @@ a {
     color: white;
 }
 .divider {
-    background: #EA0505;
-    border: 2.4px solid #EA0505;
+    background: var(--color-divider);
+    border: 2.4px solid var(--color-divider);
 }
 .btn-wrapper {
     display: flex;
@@ -53,7 +55,7 @@ a {
     border-radius: 15px;
 }
 .like-btn:hover {
-    background-color: #309DD4;
+    background-color: var(--color-FFCB9A);
 }
 .flex {
     display: flex !important;
@@ -200,15 +202,15 @@ a {
 /* background-att-img */
 .background-att-computer-img {
     background-attachment: fixed !important;
-    background: url("../image/computer.png");
+    background: url("../image/computer.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
-.background-att-mars-img {
+.background-att-ai-img {
     background-attachment: fixed !important;
-    background: url("../image/mars-92207_1280.jpg");
+    background: url("../image/ai-bg.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +218,7 @@ a {
 }
 .background-att-server-img {
     background-attachment: fixed !important;
-    background: url("../image/server-1235959_1280.jpg");
+    background: url("../image/cloud-bg.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,16 +226,16 @@ a {
 }
 .background-att-iot-img {
     background-attachment: fixed !important;
-    background: url("../image/internet-of-things-4129218_1280.jpg");
+    background: url("../image/iot-bg.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
-.background-att-man-img {
+.background-att-why-us-img {
     background-attachment: fixed !important;
-    background: url("../image/man-845847_1920.jpg");
-    background-position: center center;
+    background: url("../image/why-us.jpg");
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -267,7 +269,7 @@ a {
     line-height: 48px;
 }
 .why-card .why-card-content {
-    color: #CBC3C3;
+    color: #fdf7f7;
     font-size: 16px;
 }
 .overlay-card-wrapper {
@@ -325,10 +327,10 @@ a {
     margin: 5px;
 }
 .bg-green {
-    background-color: green !important;
+    background-color: #58f690  !important;
 }
-.bg-0D1481 {
-    background-color: var(--color-0D1481) !important;
+.bg-3a45f2 {
+    background-color: var(--color-3a45f2) !important;
 }
 .bg-363234 {
     background-color: var(--color-363234) !important;
@@ -355,7 +357,7 @@ section {margin: 10px 0px;}
 /* view btn */
 .link-btn {
     display: block;
-    color:#309DD4;
+    color: var(--color-FFCB9A);
     margin: 10px 0px;
 }
 .link-btn:hover {
@@ -390,6 +392,7 @@ section {margin: 10px 0px;}
     overflow-x: auto;
     margin: 0px 100px;
 }
+
 .testimonial-card {
     display: flex;
     margin: 20px;
@@ -400,7 +403,7 @@ section {margin: 10px 0px;}
     min-width: 420px;
 }
 .testimonial-card:hover {
-    border-bottom: solid 4px #2575fc;
+    border-bottom: solid 4px var(--color-fc9b38);
 }
 .testimonial-card p {
     margin-bottom: 35px;
@@ -412,7 +415,7 @@ section {margin: 10px 0px;}
 .border-hr {
     width: 40px;
     height: 2px;
-    background-color: #2575fc;
+    background-color: var(--color-fc9b38);
     margin-top: 0;
     margin-bottom: 20px;
     display: inline-block;
@@ -451,7 +454,10 @@ section {margin: 10px 0px;}
     flex: 1 0 21%;
     margin: 10px;
 }
-
+.footer-col .header {
+    color: var(--color-fc9b38);
+    font-weight: 600;
+}
 .box-container {
     background-color: #f7f7f7;
     color: white;
@@ -484,11 +490,12 @@ section {margin: 10px 0px;}
     font-size: 14px;
     line-height: 24px;
 }
-.link-img {
+.item .number {
+    font-family: "Roboto", Sans-serif;
+}
+.footer-img-container {
     flex: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    align-items: center;
     position: relative;
     min-height: 120px;
     width: 80%;
@@ -498,8 +505,45 @@ section {margin: 10px 0px;}
     transition: all .4s ease;
     display: flex;
 }
-
-
+ 
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 130px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .footer-img-container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .footer-img-container:hover .middle {
+    opacity: 1;
+  }
+  
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+.text a {
+  color: var(--color-white);
+}
 /*  */
 
 
